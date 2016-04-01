@@ -8,7 +8,7 @@ import ifeng
 
 def main():
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hi:')
+        opts, args = getopt.getopt(sys.argv[1:], 'hu:')
     except getopt.GetoptError:
         print(sys.argv[0], ' -u <the URL of album on ximalaya')
         sys.exit(2)

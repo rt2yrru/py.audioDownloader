@@ -18,7 +18,7 @@ def proc_track(title, track_id):
     print('Title : ', title, ', Href : ', path)
 
     title = '\'' + title + ext + '\''
-    cmd = 'wget -c ' + path + ' -O ' + title
+    cmd = 'wget -c --timeout=10 ' + path + ' -O ' + title
 
     subprocess.call(cmd, shell=True)
 
